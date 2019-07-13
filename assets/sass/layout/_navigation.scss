@@ -1,0 +1,121 @@
+.menu-btn {
+	position: absolute;
+	right: 3.5rem;
+	top: 3.5rem;
+	cursor: pointer;
+	z-index: 4;
+	@include easeOut;
+
+	.btn-line {
+		width: 2.8rem;
+		height: 3px;
+		margin: 0 0 5px 0;
+		background-color: $primary-color-text;
+		@include easeOut;
+	}
+
+	// rotate menu button
+	&.close {
+		transform: rotate(180deg);
+
+		.btn-line {
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(5px, 5px);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(7px, -6px);
+			}
+		}
+	}
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50%;
+	opacity: 1;
+	visibility: hidden;
+	z-index: 3;
+
+	&.show {
+		visibility: visible;
+	}
+
+	&__list {
+		width: 30rem;
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		float: right;
+		height: 100vh;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		// background-color: darken($primary-color-text, 1);
+		// background-color: $primary-color;
+		list-style: none;
+		text-align: center;
+		transform: translate3d(100%, 0, 0);
+		@include easeOut;
+
+		// slide in from right
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	@media only screen and (max-width: $bp-smallest) {
+		&__list {
+			width: 100%;
+		}
+	}
+
+	&__item {
+		transform: translate3d(600px, 0, 0);
+		@include easeOut;
+
+		// slide in from right
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+
+		&.current > a {
+			color: $tertiary-color;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		position: relative;
+		font-size: 3rem;
+		text-transform: uppercase;
+		padding: 1rem 0;
+		font-weight: 400;
+		color: $primary-color-text;
+		text-decoration: none;
+		@include easeOut;
+
+		&:hover {
+			color: $tertiary-color;
+		}
+	}
+}
+
+@media only screen and (max-width: $bp-smallest) {
+	.nav {
+		width: 100%;
+	}
+}
+
+// delay nav items
+@for $i from 1 through 4 {
+	.nav__item:nth-child(#{$i}) {
+		transition-delay: $i * 0.1s;
+	}
+}

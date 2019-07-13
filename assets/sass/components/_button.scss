@@ -1,0 +1,126 @@
+.btn {
+	&-contact {
+		&,
+		&:link,
+		&:visited {
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 1.5rem 4rem;
+			display: inline-block;
+			position: relative;
+			border-radius: 10rem;
+			transition: all .2s;
+			font-size: $default-font-size;
+			background-color: $primary-color-text;
+			color: $primary-color;
+
+			//change for the <button> element
+			border: none;
+			cursor: pointer;
+
+			@media only screen and (max-width: $bp-smallest) {
+				font-size: 1.4rem;
+			}
+		}
+
+		&:hover {
+			transform: translateY(-.3rem);
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+			&::after {
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(-1px);
+			box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+		}
+
+		&::after {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			border-radius: 10rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: all .4s;
+		}
+	}
+
+	&-project {
+		&,
+		&:link,
+		&:visited {
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 1.5rem 4rem;
+			display: inline-block;
+			position: relative;
+			border-radius: 10rem;
+			transition: all .2s;
+			font-size: $default-font-size;
+			background-color: $primary-color;
+			color: $primary-color-text;
+
+			//change for the <button> element
+			border: none;
+			cursor: pointer;
+		}
+
+		&:hover {
+			transform: translateY(-.3rem);
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+			&::after {
+				transform: scaleX(1.4) scaleY(1.6);
+				opacity: 0;
+			}
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(-1px);
+			box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+		}
+
+		&::after {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			border-radius: 10rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: all .4s;
+		}
+	}
+
+	&--white {
+		background-color: $primary-color-text;
+		color: $primary-color;
+
+		&::after {
+			background-color: $primary-color-text;
+		}
+	}
+
+	&--black {
+		background-color: $primary-color;
+		color: $primary-color-text;
+
+		&::after {
+			background-color: $primary-color;
+			color: $primary-color-text;
+		}
+	}
+}

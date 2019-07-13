@@ -1,0 +1,50 @@
+.skillbox {
+	width: 50%;
+	margin: 0 auto;
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	.skill {
+		background-color: $primary-color-text;
+		padding: 0.1rem;
+		border: 1px solid $primary-color;
+		border-radius: 2px;
+		height: 1.8rem;
+
+		.skill-level {
+			background-color: $primary-color;
+			height: 1rem;
+			position: relative;
+			height: 1.4rem;
+
+			p {
+				color: $primary-color-text;
+				margin: 0.1rem 0;
+
+				@include absCenter;
+			}
+		}
+	}
+}
+
+.skill-1 {
+	width: 100%;
+}
+
+.skill-2 {
+	width: 100%;
+}
+
+.skill-3 {
+	width: 90%;
+}
+
+.skill-4 {
+	width: 60%;
+}
+
+.skill-5 {
+	width: 65%;
+}

@@ -1,0 +1,20 @@
+.main {
+	&__logo {
+		margin: 1.5rem 0 0 2rem;
+		z-index: 4;
+		width: 12rem;
+		position: absolute;
+		top: 1.4rem;
+		left: 1.5rem;
+
+		&-text {
+			font-size: 2.5rem;
+		}
+
+		&-text--link {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $primary-color;
+		}
+	}
+}

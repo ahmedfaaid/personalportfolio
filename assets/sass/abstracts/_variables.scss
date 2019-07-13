@@ -1,0 +1,26 @@
+// colors
+$primary-color: #1a1c1a;
+$primary-color-text: #fff;
+
+$secondary-color: #f6f5ae;
+
+$tertiary-color: #54c5e3;
+
+$color-black: #000;
+
+// fonts
+$default-font-size: 1.6rem;
+
+// grid
+$grid-width: 114rem;
+$grid-gutter: 4rem;
+
+$float-col-width: calc((100% - #{$grid-gutter}) / 2);
+
+// breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+$bp-tiny: 25em; //400px

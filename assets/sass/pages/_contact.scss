@@ -1,0 +1,57 @@
+.contact {
+	height: 100vh;
+	padding: 2rem;
+	background-color: $primary-color;
+	color: $primary-color-text;
+	position: relative;
+
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+
+		@media only screen and (max-width: 32rem) {
+			position: static;
+			transform: translate(0%, 0%);
+		}
+	}
+
+	&__text {
+		font-size: 2.5rem;
+		padding: 2rem 0;
+
+		// @media only screen and (max-width: );
+	}
+
+	&__email:link,
+	&__email:visited {
+		display: inline-block;
+		font-size: 2.5rem;
+		padding: 1rem 0;
+		text-decoration: none;
+		color: $tertiary-color;
+
+		&:hover {
+			transform: scale(1.1) translateY(-2px);
+		}
+	}
+
+	// nav variations
+	.menu-btn {
+		&.close > * {
+			background-color: $primary-color !important;
+		}
+	}
+
+	.nav {
+		&__list {
+			background-color: $primary-color-text;
+		}
+
+		&__link {
+			color: $primary-color;
+		}
+	}
+}

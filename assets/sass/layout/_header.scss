@@ -1,0 +1,88 @@
+.header {
+	position: relative;
+	height: 100vh;
+	padding: 2rem;
+	background-color: $primary-color;
+	color: $primary-color-text;
+
+	&__logo {
+		margin: 1.5rem 0 0 2rem;
+		z-index: 4;
+		width: 12rem;
+		position: absolute;
+		top: 1.4rem;
+		left: 1.5rem;
+
+		&-text--link {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: $primary-color-text;
+		}
+	}
+
+	&__logo-text {
+		font-size: 2.5rem;
+	}
+
+	&__info-box {
+		@include absCenter;
+
+		text-align: center;
+		z-index: 2;
+	}
+
+	&__info-name {
+		font-size: 5rem;
+		font-weight: 500;
+
+		@media only screen and (max-width: $bp-smallest) {
+			font-size: 3.5rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__info-title {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	&__info-icons {
+		i {
+			font-size: 4rem;
+
+			@media only screen and (max-width: $bp-smallest) {
+				font-size: 3rem;
+			}
+		}
+
+		&--links {
+			text-decoration: none;
+			color: $primary-color-text;
+
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+
+	// nav variations
+	.menu-btn {
+		&.close > * {
+			background-color: $primary-color !important;
+		}
+	}
+
+	.nav {
+		&__list {
+			background-color: $primary-color-text;
+		}
+
+		&__link {
+			color: $primary-color;
+		}
+	}
+}
