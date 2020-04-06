@@ -1,189 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143768920-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143768920-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-143768920-1');
+      gtag("config", "UA-143768920-1");
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- open graph -->
-    <meta property="og:title" content="Ahmed Faaid | Projects">
-    <meta property="og:description" content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada, who specializes in building websites and web applications using JavaScript technologies">
-    <meta property="og:image" content="assets/img/ahmed-w500.jpg">
-    <meta property="og:url" content="ahmedfaaid.com/projects">
-    <meta property="og:site_name" content="Ahmed Faaid | Front End Developer">
+    <meta property="og:title" content="Ahmed Faaid | Projects" />
+    <meta
+      property="og:description"
+      content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada, who specializes in building websites and web applications using JavaScript technologies"
+    />
+    <meta property="og:image" content="assets/img/ahmed-w500.jpg" />
+    <meta property="og:url" content="ahmedfaaid.com/projects" />
+    <meta property="og:site_name" content="Ahmed Faaid | Front End Developer" />
     <!-- twitter cards -->
-    <meta property="twitter:title" content="Ahmed Faaid | Projects">
-    <meta property="twitter:description" content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada, who specializes in building websites and web applications using JavaScript technologies">
-    <meta property="twitter:image" content="assets/img/ahmed-w500.jpg">
-    <meta property="twitter:site" content="@mr_amed">
-    <meta property="twitter:creator" content="@mr_amed">
+    <meta property="twitter:title" content="Ahmed Faaid | Projects" />
+    <meta
+      property="twitter:description"
+      content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada, who specializes in building websites and web applications using JavaScript technologies"
+    />
+    <meta property="twitter:image" content="assets/img/ahmed-w500.jpg" />
+    <meta property="twitter:site" content="@mr_amed" />
+    <meta property="twitter:creator" content="@mr_amed" />
     <!-- seo meta -->
-    <meta name="description" content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada. He builds websites and web applications using JavaScript technologies like NodeJS and Express.">
+    <meta
+      name="description"
+      content="Ahmed Faaid is a freelance front end developer based in Toronto, Canada. He builds websites and web applications using JavaScript technologies like NodeJS and Express."
+    />
     <title>Ahmed Faaid | Projects</title>
-    <link rel="shortcut icon" href="assets/img/icons8-code-file-filled-50.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.min.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="assets/img/icons8-code-file-filled-50.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
 
-<body>
+  <body>
     <main class="projects">
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
 
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">About</a>
+          </li>
+          <li class="nav__item current">
+            <a href="projects.html" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main__logo">
+        <h2 class="main__logo-text">
+          <a href="index.html" class="main__logo-text--link">Ahmed F</a>
+        </h2>
+      </div>
+
+      <h1 class="main-heading">Projects</h1>
+
+      <div class="projects__row">
+        <!-- project 1 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/covid.png"
+                alt="COVID-19 Tracker"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>COVID-19 Tracker</h2>
+              <p>
+                COVID-19 Trackeris a simple tracker that displays the latest
+                global and country cases
+              </p>
+            </div>
+
+            <a
+              href="https://covid-19-ahmed.now.sh/"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/covid-19-tracker"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
         </div>
-    
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                <li class="nav__item current"><a href="projects.html" class="nav__link">Projects</a></li>
-                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
 
-        <div class="main__logo">
-            <h2 class="main__logo-text"><a href="index.html" class="main__logo-text--link">Ahmed F</a></h2>
+        <!-- project 2 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/sneakersseur.png"
+                alt="Sneakersseur"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>Sneakersseur</h2>
+              <p>
+                Sneakersseur is a sneaker news website built with GatsbyJS,
+                ReactJS, GraphQL and Markdown files
+              </p>
+            </div>
+
+            <a
+              href="https://sneakersseur.netlify.com"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/sneak"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
         </div>
 
-        <h1 class="main-heading">Projects</h1>
-
-        <div class="projects__row">
-            <!-- project 1 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/Beats'N'Vibes.png" alt="Beats'N'Vibes" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>Beats'N'Vibes</h2>
-                        <p>Beats'N'Vibes is a fictional DJ blog built using GatsbyJS, GraphQL and Contentful CMS</p>
-                    </div>
-
-                    <a href="https://objective-wozniak-6dbb27.netlify.com/" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/beatsnvibes" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
+        <!-- project 3 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/Beats'N'Vibes.png"
+                alt="Beats'N'Vibes"
+                class="card__photo--img"
+              />
             </div>
 
-            <!-- project 2 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/sneakersseur.png" alt="Sneakersseur" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>Sneakersseur</h2>
-                        <p>Sneakersseur is a sneaker news website built with GatsbyJS, ReactJS, GraphQL and Markdown files</p>
-                    </div>
-
-                    <a href="https://sneakersseur.netlify.com" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/sneak" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
+            <div class="description">
+              <h2>Beats'N'Vibes</h2>
+              <p>
+                Beats'N'Vibes is a fictional DJ blog built using GatsbyJS,
+                GraphQL and Contentful CMS
+              </p>
             </div>
 
-            <!-- project 3 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/YelpCamp.jpg" alt="Yelp Camp" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>YelpCamp</h2>
-                        <p>YelpCamp is a fictional campground info and review web app built with NodeJS, Express and MongoDB</p>
-                    </div>
-
-                    <a href="https://nameless-sands-78625.herokuapp.com/" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/yelp-camp-project" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-            
-            <!-- project 4 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/ReactToDo.png" alt="React To Do" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>React To Do</h2>
-                        <p>A simple to do list built using ReactJS. The UI is the same as another to do list built using vanilla JS</p>
-                    </div>
-
-                    <a href="https://heuristic-goldberg-e1a7c2.netlify.com/" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/reacttodo" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-
-            <!-- project 5 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/Nexter.png" alt="Nexter" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>Nexter</h2>
-                        <p>A fictional real estate website built with HTML, CSS/SCSS. Majority of the layout is built with CSS Grid</p>
-                    </div>
-
-                    <a href="http://ahmed-nexter.surge.sh" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/Nexter" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-
-            <!-- project 6 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/Natours.png" alt="Natours" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>Natours</h2>
-                        <p>A fictional travel and tour website built with HTML, CSS/SCSS. Code uses BEM naming and many SCSS conventions</p>
-                    </div>
-
-                    <a href="http://ahmed-natours.surge.sh" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/Natours" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-
-            <!-- project 7 -->
-            <div class="column">
-                <div class="card">
-                    <div class="card__photo">
-                        <img src="assets/img/Trillo.png" alt="Trillo" class="card__photo--img">
-                    </div>
-
-                    <div class="description">
-                        <h2>Trillo</h2>
-                        <p>A fictional hotel booking website built with HTML, CSS/SCSS. Majority of the layout was built with CSS Flexbox</p>
-                    </div>
-
-                    <a href="http://ahmed-trillo.surge.sh" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fas fa-code"></i> Deployed</a>
-                    <a href="https://github.com/ahmedfaaid/Trillo" class="btn-project btn--black u-mt-sm" target="_blank"><i class=" fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-
+            <a
+              href="https://objective-wozniak-6dbb27.netlify.com/"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/beatsnvibes"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
         </div>
+
+        <!-- project 4 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/YelpCamp.jpg"
+                alt="Yelp Camp"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>YelpCamp</h2>
+              <p>
+                YelpCamp is a fictional campground info and review web app built
+                with NodeJS, Express and MongoDB
+              </p>
+            </div>
+
+            <a
+              href="https://nameless-sands-78625.herokuapp.com/"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/yelp-camp-project"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- project 5 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/Nexter.png"
+                alt="Nexter"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>Nexter</h2>
+              <p>
+                A fictional real estate website built with HTML, CSS/SCSS.
+                Majority of the layout is built with CSS Grid
+              </p>
+            </div>
+
+            <a
+              href="http://ahmed-nexter.surge.sh"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/Nexter"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- project 6 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/Natours.png"
+                alt="Natours"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>Natours</h2>
+              <p>
+                A fictional travel and tour website built with HTML, CSS/SCSS.
+                Code uses BEM naming and many SCSS conventions
+              </p>
+            </div>
+
+            <a
+              href="http://ahmed-natours.surge.sh"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/Natours"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- project 7 -->
+        <div class="column">
+          <div class="card">
+            <div class="card__photo">
+              <img
+                src="assets/img/Trillo.png"
+                alt="Trillo"
+                class="card__photo--img"
+              />
+            </div>
+
+            <div class="description">
+              <h2>Trillo</h2>
+              <p>
+                A fictional hotel booking website built with HTML, CSS/SCSS.
+                Majority of the layout was built with CSS Flexbox
+              </p>
+            </div>
+
+            <a
+              href="http://ahmed-trillo.surge.sh"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fas fa-code"></i> Deployed</a
+            >
+            <a
+              href="https://github.com/ahmedfaaid/Trillo"
+              class="btn-project btn--black u-mt-sm"
+              target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="/assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
